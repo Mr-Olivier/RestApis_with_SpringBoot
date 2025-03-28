@@ -151,7 +151,7 @@ public class EmployeeController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    // Delete employee REST API
+    // Delete employee REST APIS
     @DeleteMapping("{id}")
     public ResponseEntity<Map<String, Object>> deleteEmployee(@PathVariable long id) {
         Employee employee = employeeRepository.findById(id)
